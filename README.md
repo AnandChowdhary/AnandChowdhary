@@ -1,6 +1,6 @@
 # 👋 Hello!
 
-**Anand Chowdhary** is a creative technologist and entrepreneur. He is the co-founder of [Koj](https://github.com/koj-co) and [Oswald Labs](https://oswaldlabs.com), an avid open-source contributor, and a consultant to several startups around the world. He has been featured in lists like Forbes 30 Under 30, Het Financieele Dagblad (Dutch Financial Times)'s 50 most-innovative entrepreneurs in the Netherlands, and in various publications.
+**Anand Chowdhary** is a creative technologist and entrepreneur. He is the co-founder of [Koj](https://github.com/koj-co) and [Oswald Labs](https://github.com/OswaldLabsOpenSource), an avid open-source contributor, and a consultant to several startups around the world. He has been featured in lists like Forbes 30 Under 30, Het Financieele Dagblad (Dutch Financial Times)'s 50 most-innovative entrepreneurs in the Netherlands, and in various publications.
 
 **Open for mentoring:** You can find me on [GrowthMentor](https://app.growthmentor.com/mentors/anand-chowdhary) and set up a 15- or 30-minute call.
 
