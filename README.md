@@ -1,6 +1,6 @@
 # 👋 Hello!
 
-**Anand Chowdhary** is a creative technologist and entrepreneur. He is the co-founder of [Koj](https://github.com/koj-co) and [Oswald Labs](https://github.com/OswaldLabsOpenSource), an avid open-source contributor, and a consultant to several startups around the world. He has been featured in lists like Forbes 30 Under 30, Het Financieele Dagblad (Dutch Financial Times)'s 50 most-innovative entrepreneurs in the Netherlands, and in various publications.
+**Anand Chowdhary** is a creative technologist and entrepreneur. He is the co-founder of [Pabio](https://github.com/PabioHQ) and [Oswald Labs](https://github.com/OswaldLabsOpenSource), an avid open-source contributor, and a consultant to several startups around the world. He has been featured in lists like Forbes 30 Under 30, Het Financieele Dagblad (Dutch Financial Times)'s 50 most-innovative entrepreneurs in the Netherlands, and in various publications.
 
 [🌐 Personal website](https://anandchowdhary.com) · [ℹ️ About](https://anandchowdhary.com/about/) · [💻 Projects](https://anandchowdhary.com/projects/) · [📚 Blog](https://anandchowdhary.com/blog/) · [🗣️ Speaking](https://anandchowdhary.com/events/) · [🧬 Life](https://anandchowdhary.com/life/) · [📰 Press](https://anandchowdhary.com/press/)
 
