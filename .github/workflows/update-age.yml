@@ -1,0 +1,66 @@
+name: Update Age in README
+
+on:
+  schedule:
+    # Run every morning at 6:00 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Allow manual trigger for testing
+
+permissions:
+  contents: write
+
+jobs:
+  update-age:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Update age in README
+        run: |
+          # Birth date: December 29, 1997, 12:00 PM UTC
+          birth_timestamp=$(date -u -d "1997-12-29 12:00:00" +%s)
+          current_timestamp=$(date -u +%s)
+          
+          # Calculate age in seconds and convert to years
+          # 31557600 = average seconds per year (365.25 days * 24 hours * 60 minutes * 60 seconds)
+          age_seconds=$((current_timestamp - birth_timestamp))
+          age_years=$(echo "scale=10; $age_seconds / 31557600" | bc)
+          
+          # Round to 2 decimal places
+          age_rounded=$(printf "%.2f" $age_years)
+          
+          echo "Current age: $age_rounded years"
+          
+          # Update README.md with the new age
+          # Find the line with the age and update it
+          if ! sed -i -E "s/(I'm <code title=\"Last updated on [^\"]*\">)[0-9]+\.[0-9]+(<\/code> now\.)/\1${age_rounded}\2/" README.md; then
+            echo "Error: Failed to update age in README.md"
+            exit 1
+          fi
+          
+          # Verify the update was successful
+          if ! grep -q "${age_rounded}" README.md; then
+            echo "Error: Age was not updated in README.md"
+            exit 1
+          fi
+          
+          # Update the title with current date
+          current_date=$(date -u +"%B %-d, %Y")
+          if ! sed -i -E "s/(I'm <code title=\"Last updated on )[^\"]*(\">)/\1${current_date}\2/" README.md; then
+            echo "Error: Failed to update date in README.md"
+            exit 1
+          fi
+          
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update age to $(date -u +"%B %-d, %Y")"
+            git push
+          fi
