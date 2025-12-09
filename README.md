@@ -2,7 +2,7 @@
 
 **Anand Chowdhary is a technology entrepreneur, engineer, designer, and [GitHub Star](https://stars.github.com/profiles/anandchowdhary/).**
 
-He is currently building [FirstQuadrant](https://firstquadrant.ai), an all-in-one AI sales platform funded by Y Combinator.
+He is currently on a break. Previously, he built [FirstQuadrant](https://firstquadrant.ai), an all-in-one AI sales platform funded by Y Combinator.
 
 He also makes [angel investments](https://chowdhary.co) and does some [nonprofit work](https://chowdhary.org) on the side. Previously, he founded rent-to-own furniture with interior design startup [Pabio](https://anandchowdhary.com/projects/tags/pabio) and accessibility technology company [Oswald Labs](https://anandchowdhary.com/projects/tags/oswald-labs).
 
