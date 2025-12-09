@@ -24,6 +24,7 @@ jobs:
           current_timestamp=$(date -u +%s)
           
           # Calculate age in seconds and convert to years
+          # 31557600 = average seconds per year (365.25 days * 24 hours * 60 minutes * 60 seconds)
           age_seconds=$((current_timestamp - birth_timestamp))
           age_years=$(echo "scale=10; $age_seconds / 31557600" | bc)
           
@@ -34,11 +35,23 @@ jobs:
           
           # Update README.md with the new age
           # Find the line with the age and update it
-          sed -i -E "s/(I'm <code title=\"Last updated on [^\"]*\">)[0-9]+\.[0-9]+(<\/code> now\.)/\1${age_rounded}\2/" README.md
+          if ! sed -i -E "s/(I'm <code title=\"Last updated on [^\"]*\">)[0-9]+\.[0-9]+(<\/code> now\.)/\1${age_rounded}\2/" README.md; then
+            echo "Error: Failed to update age in README.md"
+            exit 1
+          fi
+          
+          # Verify the update was successful
+          if ! grep -q "${age_rounded}" README.md; then
+            echo "Error: Age was not updated in README.md"
+            exit 1
+          fi
           
           # Update the title with current date
           current_date=$(date -u +"%B %-d, %Y")
-          sed -i -E "s/(I'm <code title=\"Last updated on )[^\"]*(\">)/\1${current_date}\2/" README.md
+          if ! sed -i -E "s/(I'm <code title=\"Last updated on )[^\"]*(\">)/\1${current_date}\2/" README.md; then
+            echo "Error: Failed to update date in README.md"
+            exit 1
+          fi
           
       - name: Commit and push if changed
         run: |
