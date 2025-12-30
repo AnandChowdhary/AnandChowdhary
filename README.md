@@ -17,7 +17,7 @@ He also makes [angel investments](https://chowdhary.co) and does some [nonprofit
 
 ## About me
 
-- I made my first website and [published](https://web.archive.org/web/20081019093430/http://www.namah.org:80/anand/) it to the web when I was ten years old. I'm <code title="Last updated on December 29, 2025">28.00</code> now.
+- I made my first website and [published](https://web.archive.org/web/20081019093430/http://www.namah.org:80/anand/) it to the web when I was ten years old. I'm <code title="Last updated on December 30, 2025">28.00</code> now.
 - I'm from New Delhi and have lived in Enschede, Groningen, San Francisco, and now Utrecht.
 - I track all my [habits, travel, and biomarkers](https://anandchowdhary.com/life), and they have an API (yes, really).
 - Apart from my day (+night) job, I also advise early-stage startups and contribute to open source projects.
