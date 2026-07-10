@@ -17,7 +17,7 @@ Previously, he built [FirstQuadrant](https://anandchowdhary.com/projects/tags/fi
 
 ## About me
 
-- I made my first website and [published](https://web.archive.org/web/20081019093430/http://www.namah.org:80/anand/) it to the web when I was ten years old. I'm <code title="Last updated on July 9, 2026">28.53</code> now.
+- I made my first website and [published](https://web.archive.org/web/20081019093430/http://www.namah.org:80/anand/) it to the web when I was ten years old. I'm <code title="Last updated on July 10, 2026">28.53</code> now.
 - I'm from New Delhi and have lived in Enschede, Groningen, San Francisco, and now Utrecht.
 - I track all my [habits, travel, and biomarkers](https://anandchowdhary.com/life), and they have an API (yes, really).
 - Apart from my day (+night) job, I also advise early-stage startups and contribute to open source projects.
